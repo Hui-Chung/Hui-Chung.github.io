@@ -1,0 +1,83 @@
+@media (min-width: 750px) {
+    header {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        padding: 0 20px;
+        background: rgba(255, 215, 215, 1);
+        font-size: 20px;
+    }
+    
+    #top_icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    
+    .link {
+        position: fixed;
+        right: 20px;
+    }
+    
+    .link a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 749px) {
+    header {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        padding: 0 20px;
+        background: rgba(255, 215, 215, 1);
+        font-size: 20px;
+    }
+    
+    #top_icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    
+    .link {
+        position: fixed;
+        top: 60px;
+        right: -250px; /* 初始位置在視窗外 */
+        width: 200px;
+        height: 100%;
+        background: rgba(255, 215, 215, 0.9);
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        transition: right 0.3s ease;
+    }
+    
+    .link a {
+        display: block;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .link.show {
+        right: 0; /* 顯示菜單 */
+    }
+}
