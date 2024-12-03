@@ -9,6 +9,7 @@
         padding: 0 20px;
         background: rgba(255, 215, 215, 1);
         font-size: 20px;
+        z-index: 1000; /* 確保 header 在頂層顯示 */
     }
     
     #top_icon {
@@ -45,6 +46,7 @@
         padding: 0 20px;
         background: rgba(255, 215, 215, 1);
         font-size: 20px;
+        z-index: 1000; /* 確保 header 在頂層顯示 */
     }
     
     #top_icon {
