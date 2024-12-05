@@ -22,3 +22,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// 每次打開網頁時隨機顯示不同的句子
+document.addEventListener('DOMContentLoaded', function() {
+    var quotes = [
+        "Don’t let the past steal your present.",
+        "Stars can’t shine without darkness.",
+        "Spend your life in your own way.",
+        "You can’t be perfect but you can be unique.",
+    ];
+
+    var randomIndex = Math.floor(Math.random() * quotes.length);
+    var randomQuote = quotes[randomIndex];
+
+    var quoteElement = document.getElementById('quote_line');
+    quoteElement.textContent = randomQuote;
+});
